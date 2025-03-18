@@ -64,6 +64,11 @@ Changelog for Admin Panel
         $userAdmin->assignRole(Role::ROLE_ADMIN);
         to: database\seeders\UserSeeder.php
 
+1.0.14 - Add:
+        public function setLinkAttribute(string $value)
+        to: TelegramLink.php
+        
+
 
 Changelog for Bot
 

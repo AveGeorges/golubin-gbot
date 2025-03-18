@@ -16,6 +16,7 @@ class DatabaseSeeder extends Seeder
         $this->call(UserSeeder::class);
         $this->call(CategorySeeder::class);
         $this->call(KeywordsSeeder::class);
-      //   $this->call(LinksFromDevSeeder::class);
+        $this->call(LinksFromDevSeeder::class);
+        $this->call(UpdateTelegramLinksSeeder::class);
     }
 }

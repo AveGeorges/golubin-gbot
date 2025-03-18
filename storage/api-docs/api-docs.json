@@ -1,0 +1,53 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Golubin bot Swagger API",
+        "description": "L5 Swagger API description",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/new-message": {
+            "post": {
+                "tags": [
+                    "NewMessage"
+                ],
+                "description": "Get new message and link to telegram channel",
+                "operationId": "1b1054599288eae9422ca921913f8ca5",
+                "parameters": [
+                    {
+                        "name": "category",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "example": "3"
+                        }
+                    },
+                    {
+                        "name": "telegram_link",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "example": "tg.me/blabla"
+                        }
+                    },
+                    {
+                        "name": "telegram_link_raw",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "example": "tg.me/blabla/123"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Success"
+                    }
+                }
+            }
+        }
+    }
+}
